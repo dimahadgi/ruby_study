@@ -4,7 +4,7 @@ class Business
 
   def add_worker(worker_name)
     @@workers_list << worker_name
-    puts "Worker #{worker_name} is added"
+    puts "Worker #{worker_name} is addedd"
   end
 
   # def print_workers_count
