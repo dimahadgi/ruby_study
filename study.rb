@@ -38,7 +38,7 @@ end
 facebook = Business.new
 microsoft = Business.new
 
-facebook.add_worker('Ted Low')
+facebook.add_worker('Ted Lowe')
 facebook.add_worker('Alex Snow')
 microsoft.add_worker('Jack Daniels')
 microsoft.add_worker('Ilan Mask')
