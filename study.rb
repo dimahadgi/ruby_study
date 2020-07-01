@@ -16,7 +16,7 @@ class Business
   end
 
   def fire_worker(worker_name)
-    @@workers_list.delete(worker_name) if @workers_list.include?(worker_name)
+    @workers_list.delete(worker_name) if @workers_list.include?(worker_name)
     puts "Worker #{worker_name} is fired"
   end
 
@@ -38,10 +38,10 @@ end
 facebook = Business.new
 microsoft = Business.new
 
-facebook.add_worker('Ted Lowe')
-facebook.add_worker('Alex Snow')
-microsoft.add_worker('Jack Daniels')
-microsoft.add_worker('Ilan Mask')
+facebook.add_worker('Ted Lowe, 9 years expirience, lawyer')
+facebook.add_worker('Alex Snow, 1 year expirience, accountant')
+microsoft.add_worker('Jack Daniels, 3 years expirience, lawyer')
+microsoft.add_worker('Ilan Mask, 4 years expirience, accountant')
 
 microsoft.print_worker_list
 facebook.print_worker_list
